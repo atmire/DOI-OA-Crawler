@@ -8,7 +8,7 @@ import time
 
 parser = argparse.ArgumentParser(description="Find open access state from DOI on wiley")
 parser.add_argument("--filename", "-f", help='Give the filename with the DOIs')
-parser.add_argument("--timeout", "-t", type=int, help="Timeout option to pretend flooding the wiley servers too much", default=5)
+parser.add_argument("--timeout", "-t", type=int, help="Timeout option to prevent flooding the wiley servers too much", default=5)
 
 args = parser.parse_args()
 
