@@ -1,4 +1,4 @@
-# DOI Open Access Status Crawlers
+# DOI Open Access Status Crawler
 
 Dedicated screenscraper to crawl open access status based on DOI of an article.
 Made for Wiley content
