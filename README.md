@@ -1,7 +1,11 @@
 # DOI-OA-Crawler
 
-Scripting and tooling to crawl open access status based on DOI of an article.
+Dedicated screenscraper to crawl open access status based on DOI of an article.
 Made for Wiley content
+
+## How it works
+
+Wiley article page urls can be extended with /epdf. From these EPDF pages, we retrieve the value of the field "'WOL-Article-Access-State'" in the returned HTML source. Currently, this approach only works for articles hosted on onlinelibrary.wiley.com. However, we are very interested in developing similar approaches for other publishers/vendors.
 
 ## Requirements
 
@@ -33,7 +37,3 @@ Run the code with `python doicrawler.py -f {filename with DOI's} -t {timeout}`
                       Timeout option to prevent flooding the wiley servers
                       too much
 ```
-
-## Working
-
-This tool looks for the field "'WOL-Article-Access-State'" in the source code before accessing an article to determine the open access status. Only works for articles hosted on onlinelibrary.wiley.com
